@@ -1,5 +1,6 @@
 #아래 코드를 Abaqus CAE에서 입력 후 실행
 # exec(open("auto_iteration.py", encoding="utf-8").read())
+#for branch
 
 #import basic package
 # -*- coding: mbcs -*-
