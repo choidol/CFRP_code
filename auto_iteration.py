@@ -42,7 +42,7 @@ n_layer = int(col_count/19) #정수형으로 layer 개수 확인
 
 #데이터에서 데이터 수량 확인 후, n_iteration 결정
 n_iteration = data_p.shape[0] 
-#n_iteration = 1+2 #iteration 할 숫자에서 1 더해야 함. 만약에 필요 없다면, 그냥 주석처리 하면 됨.
+n_iteration = 3 #iteration 할 숫자에서 1 더해야 함. 만약에 필요 없다면, 그냥 주석처리 하면 됨.
 
 
 
