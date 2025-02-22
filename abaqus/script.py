@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# -*- coding: mbcs -*-
 
 from abaqus import *
 from abaqusConstants import *
@@ -37,7 +37,6 @@ n_layer = int(col_count/19) #정수형으로 layer 개수 확인
 
 #데이터에서 데이터 수량 확인 후, n_iteration 결정
 n_iteration = data_p.shape[0] 
-n_iteration = 3 #iteration 할 숫자에서 1 더해야 함. 만약에 필요 없다면, 그냥 주석처리 하면 됨.
 
 
 
@@ -224,7 +223,7 @@ for i in range(n_iteration): #i = 0일 때의 데이터는 의미가 없으므�
     print(job_name, 'completed!')
 
     if i == n_iteration - 1: #마지막 작업이면 바로 넘어감
-        print("finished!")
+        print("iteration finished!")
         continue
 
     #delete job
@@ -242,3 +241,5 @@ for i in range(n_iteration): #i = 0일 때의 데이터는 의미가 없으므�
     print("\nProgress: {:.2f}% ({} / {} iterations completed)".format(progress_percent, completed_iterations, total_iterations))
     print("Iteration time: {:.2f}sec\nElapsed time: {:.2f}sec\nRemaining time: {:.2f}min".format(iteration_time, elapsed_time, estimated_remaining/60))
     print("-" * 50)
+
+print("all finished!")
