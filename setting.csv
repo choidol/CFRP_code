@@ -1,0 +1,10 @@
+n_samples,5000
+n_layers,25
+elastic,130000,7000,0.25,5000,5000,5000
+failstress,13000,-1000,40,-100,100,0,0
+failstrain,0.015,-0.01,0.005,-0.01,0.01
+pattern_angle,0,45,90,135
+mean_drop,0.08
+std_drop,0.01
+lower,0.06
+upper,0.10

@@ -8,3 +8,8 @@
 *.odb
 *.prt
 *.sta
+*.pyc
+*pycache*
+*.pkl
+*.json
+study*
