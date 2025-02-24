@@ -8,10 +8,10 @@ CFRP_code/
 ├── main.py  
 ├── README.md  
 ├── setting.csv  
-├── gitignore  
+├── .gitignore  
 ├── abaqus/  
-│   ├── script.py  
-│   └── old/  
-│       └── auto_iteration.py  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── script.py  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── old/  
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── auto_iteration.py  
 └── data/  
-    └── manage_data.py  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── manage_data.py  
