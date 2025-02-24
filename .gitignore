@@ -13,3 +13,6 @@
 *.pkl
 *.json
 study*
+*.rec
+*.ipm
+*.keep
