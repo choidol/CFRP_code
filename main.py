@@ -37,7 +37,18 @@ for i in range(n_iteration):
     
     md.save_pkl(parameter, "data/parameter.pkl") #.pkl로 데이터 저장 
 
-    subprocess.run("abaqus cae script=abaqus/script.py", shell=True, encoding="utf-8") #abaqus를 CLI 환경에서 실행.
+    subprocess.run("abaqus cae noGUI=abaqus/script.py", shell=True, encoding="utf-8") #abaqus를 CLI 환경에서 실행.
+    #창을 띄우기 위해서는 "noGUI"를 "script"로 변경.
+    #현재 버전에서는 40번 라인에서 아래의 error가 발생. 
+    #abaqus 프로세스의 종료 과정에서 발생하는 것으로 예상.
+
+    """
+    *** Error: ABQcaeK.exe / rank 0 / thread 0  encountered a system exception 0xC0000005 (EXCEPTION_ACCESS_VIOLATION)
+
+    *** ERROR CATEGORY:  CAE
+
+    Abaqus Error: cae exited with an error.
+    """
 
     # 진행 상황 및 시간 계산
     iteration_time = time.time() - iteration_start              # 이번 반복 소요 시간
